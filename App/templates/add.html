@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ABSA Phone Book - Add Contacts Page</title>
+<link rel="shortcut icon" href="../static/img/contacts.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+<link href="../static/css/reg.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+<div class="header">
+	<img src="../static/img/logo.png" alt="ABSA Phone Book" class="responsive"></li>
+</div>
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a class="active" href="/add">Add</a></li>
+  <li><a href="/reports">View</a></li>
+  <li><a href="/search">Search</a></li>
+</ul>
+
+
+<div class="jumbotron">
+<div align="center">
+<h2>Add New Contacts</h2>
+
+<form action="/register" method="post">
+
+<table>
+	<tr>
+		<td>Name:</td>
+		<td><input type="text" id="name" name="name"></td>
+	</tr>
+
+	<tr>
+		<td>Email:</td>
+		<td><input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title='Email (Format: lloyd@absa.co.za)'></td>
+	</tr>
+
+	<tr>
+		<td>Phone:</td>
+		<td><input type="tel" id="phone" name="phone" pattern='\d{3}\d{3}\d{4}' title='Phone Number (Format: 0763935316)'></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="submit" name="register" value="Add Contact"></td>
+	</tr>
+</table>
+</form>
+</div>
+
+<br>
+<footer class="footer">
+<p>&copy; Lloyd Mwaluku 2019</p>
+</footer>
+</div>
+</body>
+</html>

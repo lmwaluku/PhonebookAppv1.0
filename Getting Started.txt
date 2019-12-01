@@ -1,0 +1,47 @@
+ABSA Phone Book App
+- Is a Web based phone book app for storing and retrieving employee contact detailss
+
+Functionality
+- Store
+- View
+- Search
+
+API
+- /register - inserts new contacts into the database
+- /results  - displays searched results based on the NAME searched
+- /report   - displays all the contacts details in the database
+
+Additional Capabilities
+- Mobile Responsive
+
+Out of scope
+- form validation - though email and phone has been validated on th add form
+- security of the app
+- load testing
+- UI/UX consideration
+
+Application Developed from:
+- Python
+- Flask and its dependencies
+- SQLite
+- HTML5
+- CSS3
+- Bootstrap
+
+How to Start the App:
+Depending with location of your python execution files,
+do the follow in command:
+>> python.exe app.py
+
+Open the browser and run the below URL:
+http://localhost:5000/
+
+TAKE NOTE:
+- you need to change the location of the database in the app.py file.
+Mine was sitting in:s
+C:/Users/Lloyd/Anaconda3/PhonebookAppv1.0/App/database.db
+
+So if yours is sitting in C:\db\database\ path, then your database path becomes:
+C:\db\database\database.db
+
+This is copyrighted material. Developed by Lloyd Mwaluku. This remains the property of Lloyd Mwaluku and its main purpose is show case Lloyd Mwaluku development capability to ABSA.

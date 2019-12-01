@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ABSA Phone Book - Search Contacts Page</title>
+<link rel="shortcut icon" href="../static/img/contacts.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+<link href="../static/css/reg.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+<div class="header">
+	<img src="../static/img/logo.png" alt="ABSA Phone Book" class="responsive"></li>
+</div>
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/add">Add</a></li>
+  <li><a href="/reports">View</a></li>
+  <li><a class="active" href="/search">Search</a></li>
+</ul>
+
+<div class="jumbotron">
+<h3>Search Contacts</h3>
+
+<div align="center">
+
+<form action="/results" method="post" style="margin:auto;max-width:600px">
+	<table>
+		<tr>
+			<td>Search Contact Name:
+				<input type="text" id="search_item" name="search_item">
+				<input type="submit" name="Search" value="Search Contacts">
+			</td>
+		</tr>
+	</table>
+</form>
+
+</div>
+</div>
+
+<footer class="footer">
+<p>&copy; Lloyd Mwaluku 2019</p>
+</footer>
+</div>
+</body>
+</html>

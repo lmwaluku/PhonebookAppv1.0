@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ABSA Phone Book - View Contacts Page</title>
+<link rel="shortcut icon" href="../static/img/contacts.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+<link href="../static/css/reg.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+<div class="header">
+	<img src="../static/img/logo.png" alt="ABSA Phone Book" class="responsive"></li>
+</div>
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/add">Add</a></li>
+  <li><a class="active" href="/reports">View</a></li>
+  <li><a href="/search">Search</a></li>
+</ul>
+
+<h3>Contact Details</h3>
+
+<table border="1" bordercolor = "white" align="center">
+	
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Email</th>
+			<th scope="col">Phone</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		{% for results in data %}
+		<tr>
+			<td class="name"><strong>{{ results[0] }}</strong></td>
+			<td class="email">{{ results[1] }}</td>
+			<td class="phone">{{ results[2] }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+<footer class="footer">
+<p>&copy; Lloyd Mwaluku 2019</p>
+</footer>
+</div>
+</body>
+</html>
